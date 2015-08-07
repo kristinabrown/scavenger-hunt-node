@@ -25,6 +25,7 @@ const io       = socketIo(server);
 var redisClient = redis.createClient();
 redisClient.subscribe('update');
 
+//set the io connection
 io.on('connection', function(socket){
 
   redisClient.on('message', function(channel, message){
