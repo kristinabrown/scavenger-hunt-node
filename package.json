@@ -1,0 +1,26 @@
+{
+  "name": "scavenger-hunt-node",
+  "version": "1.0.0",
+  "description": "node portion of scavenger hunt for pub-sub",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "web": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-dowty/scavenger-hunt-node.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eric-dowty/scavenger-hunt-node/issues"
+  },
+  "homepage": "https://github.com/eric-dowty/scavenger-hunt-node#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "redis": "^0.12.1",
+    "socket.io": "^1.3.6"
+  }
+}
