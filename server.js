@@ -13,7 +13,7 @@ var url = require('url');
 var port = process.env.PORT || 3001;
 var redisURL = url.parse(process.env.REDIS_URL);
 var redisClient = redis.createClient(redisURL.port, redisURL.hostname);
-client.auth(redisURL.auth.split(":")[1]);
+redisClient.auth(redisURL.auth.split(":")[1]);
 
 //set the port if not evironmental port exists
 
