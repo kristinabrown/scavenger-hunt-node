@@ -6,6 +6,7 @@ const redis    = require('redis');
 
 //instantiate the app as an instance of express
 const app      = express();
+var url = require('url');
 
 //SERVER
 
