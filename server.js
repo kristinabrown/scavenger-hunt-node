@@ -10,7 +10,7 @@ const app      = express();
 //SERVER
 
 //set the port if not evironmental port exists
-var port = process.env.PORT || 3001;
+var port = process.env.REDIS_URL || 3001;
 
 //initialize the server - pass the express app to the http module and have it listen to the port
 var server = http.createServer(app)
