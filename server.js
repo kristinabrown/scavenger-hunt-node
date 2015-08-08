@@ -10,12 +10,12 @@ var url = require('url');
 
 //SERVER
 
-var redisURL = url.parse(process.env.REDIS_URL);
-var redisClient = redis.createClient(redisURL.port, redisURL.hostname);
-redisClient.auth(redisURL.auth.split(":")[1]);
+var port = process.env.REDIS_URL || 3001;
+// var redisURL = url.parse(process.env.REDIS_URL);
+var redisClient = redis.createClient(port);
+redisClient.auth(port.auth.split(":")[1]);
 
 //set the port if not evironmental port exists
-// var port = process.env.REDIS_URL || 3001;
 
 //initialize the server - pass the express app to the http module and have it listen to the port
 var server = http.createServer(app)
