@@ -11,7 +11,7 @@ var url = require('url');
 //SERVER
 
 var port = process.env.PORT || 3001;
-var redisURL = url.parse(process.env.REDIS_URL);
+var redisURL = url.parse(process.env."redis://h:p592ursm7337vt19fo7j5l070e6@ec2-54-83-57-64.compute-1.amazonaws.com:11999");
 var redisClient = redis.createClient(redisURL.port, redisURL.hostname);
 redisClient.auth(redisURL.auth.split(":")[1]);
 
