@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "node portion of scavenger hunt for pub-sub",
   "main": "server.js",
+  "engines": {
+    "node": "0.12.1",
+    "npm": "2.7.3"
+  },
   "scripts": {
     "test": "mocha",
     "start": "node server.js",
@@ -10,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eric-dowty/scavenger-hunt-node.git"
+    "url": "git+https://github.com/kristinabrown/scavenger-hunt-node.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eric-dowty/scavenger-hunt-node/issues"
+    "url": "https://github.com/kristinabrown/scavenger-hunt-node/issues"
   },
-  "homepage": "https://github.com/eric-dowty/scavenger-hunt-node#readme",
+  "homepage": "https://github.com/kristinabrown/scavenger-hunt-node#readme",
   "dependencies": {
     "express": "^4.13.3",
     "redis": "^0.12.1",
