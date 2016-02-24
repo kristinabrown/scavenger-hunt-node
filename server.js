@@ -8,13 +8,13 @@ var url = require('url');
 //instantiate the app as an instance of express
 const app      = express();
 
-//set the port if not evironmental port exists
+//set the port if no evironmental port exists
 
 var port = process.env.PORT || 3001;
 
 //this connects to our rails redis instance, it is hardcoded in but it is possible that at some point
 //heroku will change up our redis instance, that happens, and so if it's not working, the first thing
-//to check will be our rails heroku redis url :) 
+//to check will be our rails heroku redis url :)
 var redisURL = url.parse("redis://h:p592ursm7337vt19fo7j5l070e6@ec2-54-83-57-64.compute-1.amazonaws.com:11999");
 
 var redisClient = redis.createClient(redisURL.port, redisURL.hostname);
